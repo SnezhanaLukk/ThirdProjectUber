@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-6">
                         <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797-09-88</a>
-                        <button class="subheader_btn">заказать звонок</button>
+                        <button class="subheader_btn feedback_btn" data-modal >заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                         Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители
                         у нас зарабатывают от 80000 - 120000 в месяц.
                     </div>
-                    <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+                    <button class="promo_btn  feedback_btn " data-modal>ОТПРАВИТЬ ЗАЯВКУ!</button>
                 </div>
             </div>
         </div>
@@ -371,6 +371,7 @@
         <h2 class="subtitle world_subtitle">Мы в вашем городе и по всему миру</h2>
         <a href="#" class="world_cities">посмотреть все города</a>
     </section>
+
     <footer>
         <div class="footer_divider"></div>
         <div class="footer_wrapper">
@@ -421,6 +422,20 @@
             </div>
         </div>
     </footer> 
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="modal__btn">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
